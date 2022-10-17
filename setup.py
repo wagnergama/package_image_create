@@ -14,7 +14,7 @@ setup(
         description="pacote para criação de imagens",
         long_description=page_description,
         long_description_content_type="text/markdown",
-        url="my_github_repository_project_link",
+        url="https://github.com/wagnergama/package_image_create",
         packages=find_packages(),
         install_requires=requirements,
         python_requires='>=3.8',
