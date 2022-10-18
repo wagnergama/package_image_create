@@ -1,13 +1,18 @@
 from setuptools import setup
+from setuptools import find_packages
+
+with open("README.md", "r") as f:
+    page_description = f.read()
 
 setup(
     name='image_create',
-    version='0.0.3',
+    version='0.0.1',
     author="wagner_gama",
     author_email="wagner@dealinformatica.info",
     description="pacote para criação de imagens",
-    install_requires=[
-        'Pillow==9.2.0',
-        'importlib-metadata; python_version == "3.10"',
-    ],
+    long_description=page_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/wagnergama/package_image_create",
+    packages=find_packages(include=['image_create']),
+    python_requires= '>=3.10'
 )
